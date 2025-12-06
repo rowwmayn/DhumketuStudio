@@ -152,6 +152,18 @@
             transition: transform 0.3s ease-in-out;
             transform-origin: top;
         }
+
+        /* WhatsApp Button Animation */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            z-index: 100;
+            transition: transform 0.3s ease;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
     </style>
 </head>
 <body class="bg-dhumketu-dark text-dhumketu-text font-sans antialiased overflow-x-hidden selection:bg-dhumketu-accent selection:text-white">
@@ -262,16 +274,44 @@
         </div>
     </header>
 
-    <!-- NEW SECTION: Trusted By -->
-    <section class="py-10 border-y border-gray-100 bg-white/50 backdrop-blur-sm">
+    <!-- NEW SECTION: Technologies -->
+    <section class="py-16 border-y border-gray-100 bg-white/50 backdrop-blur-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <p class="text-center text-xs font-bold text-gray-400 uppercase tracking-widest mb-6">Trusted by innovators</p>
-            <div class="flex flex-wrap justify-center gap-8 md:gap-16 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
-                <i class="fab fa-aws text-4xl hover:text-orange-500 transition-colors"></i>
-                <i class="fab fa-google text-4xl hover:text-orange-500 transition-colors"></i>
-                <i class="fab fa-meta text-4xl hover:text-orange-500 transition-colors"></i>
-                <i class="fab fa-shopify text-4xl hover:text-orange-500 transition-colors"></i>
-                <i class="fab fa-stripe text-4xl hover:text-orange-500 transition-colors"></i>
+            <p class="text-center text-xs font-bold text-gray-400 uppercase tracking-widest mb-10">TECHNOLOGIES WE USE</p>
+            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-12 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+                <!-- Web & Frontend -->
+                <i class="fab fa-html5 text-4xl hover:text-orange-500 transition-colors" title="HTML5"></i>
+                <i class="fab fa-css3-alt text-4xl hover:text-orange-500 transition-colors" title="CSS3"></i>
+                <i class="fab fa-js text-4xl hover:text-orange-500 transition-colors" title="JavaScript"></i>
+                <i class="fab fa-react text-4xl hover:text-orange-500 transition-colors" title="React"></i>
+                <i class="fab fa-vuejs text-4xl hover:text-orange-500 transition-colors" title="Vue.js"></i>
+                <i class="fab fa-angular text-4xl hover:text-orange-500 transition-colors" title="Angular"></i>
+                <i class="fab fa-bootstrap text-4xl hover:text-orange-500 transition-colors" title="Bootstrap"></i>
+                <i class="fab fa-sass text-4xl hover:text-orange-500 transition-colors" title="Sass"></i>
+                
+                <!-- Backend & Database -->
+                <i class="fab fa-node text-4xl hover:text-orange-500 transition-colors" title="Node.js"></i>
+                <i class="fab fa-python text-4xl hover:text-orange-500 transition-colors" title="Python"></i>
+                <i class="fab fa-php text-4xl hover:text-orange-500 transition-colors" title="PHP"></i>
+                <i class="fab fa-laravel text-4xl hover:text-orange-500 transition-colors" title="Laravel"></i>
+                
+                <!-- Mobile & Cross-platform -->
+                <i class="fab fa-apple text-4xl hover:text-orange-500 transition-colors" title="iOS/Swift"></i>
+                <i class="fab fa-android text-4xl hover:text-orange-500 transition-colors" title="Android/Kotlin"></i>
+
+                <!-- Tools & DevOps -->
+                <i class="fab fa-git-alt text-4xl hover:text-orange-500 transition-colors" title="Git"></i>
+                <i class="fab fa-docker text-4xl hover:text-orange-500 transition-colors" title="Docker"></i>
+                <i class="fab fa-aws text-4xl hover:text-orange-500 transition-colors" title="AWS"></i>
+                <i class="fab fa-google text-4xl hover:text-orange-500 transition-colors" title="Google Cloud"></i>
+                
+                <!-- Design -->
+                <i class="fab fa-figma text-4xl hover:text-orange-500 transition-colors" title="Figma"></i>
+                <i class="fab fa-adobe text-4xl hover:text-orange-500 transition-colors" title="Adobe Creative Suite"></i>
+
+                <!-- CMS & E-commerce -->
+                <i class="fab fa-wordpress text-4xl hover:text-orange-500 transition-colors" title="WordPress"></i>
+                <i class="fab fa-shopify text-4xl hover:text-orange-500 transition-colors" title="Shopify"></i>
             </div>
         </div>
     </section>
@@ -428,91 +468,102 @@
                 <div class="w-24 h-1 bg-orange-500 mx-auto rounded-full"></div>
             </div>
 
-            <!-- Project 1 -->
+            <!-- Project 1: Noya Bangla -->
             <div class="flex flex-col lg:flex-row items-center gap-12 mb-24">
                 <div class="lg:w-3/5 reveal-left">
-                    <div class="relative group rounded-2xl overflow-hidden border border-gray-100 shadow-xl cursor-pointer">
-                        <div class="absolute inset-0 bg-orange-600/20 group-hover:bg-transparent transition-colors z-10"></div>
-                        <!-- Added zoom effect on image -->
-                        <div class="w-full h-80 bg-gray-100 flex items-center justify-center group-hover:scale-110 transition-transform duration-700">
-                            <i class="fas fa-shopping-bag text-6xl text-gray-300 group-hover:text-orange-500 transition-colors"></i>
+                    <a href="https://rowwmayn.github.io/noyabangla/" target="_blank" class="relative group rounded-2xl overflow-hidden border border-gray-100 shadow-xl cursor-pointer block h-96">
+                        <div class="absolute inset-0 bg-green-600/10 group-hover:bg-transparent transition-colors z-20 pointer-events-none"></div>
+                        <div class="w-full h-full overflow-hidden relative bg-gray-50">
+                            <iframe 
+                                src="https://rowwmayn.github.io/noyabangla/" 
+                                class="absolute top-0 left-0 w-[200%] h-[200%] origin-top-left transform scale-50 z-10 pointer-events-none border-0"
+                                loading="lazy"
+                                title="Noya Bangla Preview"
+                                scrolling="no"
+                            ></iframe>
                         </div>
-                        <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur px-4 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity z-20 shadow-lg translate-y-2 group-hover:translate-y-0 duration-300">
-                            <span class="text-orange-600 font-bold text-sm">View Project <i class="fas fa-arrow-right ml-1"></i></span>
+                        <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur px-4 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity z-30 shadow-lg translate-y-2 group-hover:translate-y-0 duration-300">
+                            <span class="text-green-600 font-bold text-sm">Visit Site <i class="fas fa-arrow-right ml-1"></i></span>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="lg:w-2/5 reveal-right">
-                    <span class="text-orange-600 font-bold tracking-widest text-sm">WEB DEVELOPMENT • E-COMMERCE</span>
-                    <h3 class="text-3xl font-bold mt-2 mb-4 text-gray-900">Velvet Vogue</h3>
+                    <span class="text-green-600 font-bold tracking-widest text-sm">WEB DEVELOPMENT • CULTURE</span>
+                    <h3 class="text-3xl font-bold mt-2 mb-4 text-gray-900">Noya Bangla</h3>
                     <p class="text-gray-600 mb-6 leading-relaxed">
-                        A high-end fashion retailer needed a complete digital overhaul. We built a headless commerce solution focusing on speed and visual impact.
+                        My first major project: a dynamic web platform celebrating cultural heritage. This project focuses on accessibility and vibrant storytelling through code.
                     </p>
-                    
-                    <div class="border-l-4 border-orange-500 pl-4 mb-8">
+                    <div class="border-l-4 border-green-500 pl-4 mb-8">
                         <p class="text-gray-900 font-bold text-lg">The Impact</p>
-                        <p class="text-gray-500 text-sm mt-1">Sales increased by <span class="text-orange-600 font-bold">200%</span> within 3 months.</p>
+                        <p class="text-gray-500 text-sm mt-1">Established a digital footprint for cultural narratives with <span class="text-green-600 font-bold">fast load times</span> and mobile optimization.</p>
                     </div>
-
-                    <button class="text-gray-900 font-semibold border-b border-orange-500 pb-1 hover:text-orange-500 transition-colors">See Case Study</button>
+                    <a href="https://rowwmayn.github.io/noyabangla/" target="_blank" class="text-gray-900 font-semibold border-b border-green-500 pb-1 hover:text-green-600 transition-colors">Visit Website</a>
                 </div>
             </div>
 
-            <!-- Project 2 (Reversed) -->
+            <!-- Project 2: Sherpa BD -->
             <div class="flex flex-col lg:flex-row-reverse items-center gap-12 mb-24">
                 <div class="lg:w-3/5 reveal-right">
-                    <div class="relative group rounded-2xl overflow-hidden border border-gray-100 shadow-xl cursor-pointer">
-                        <div class="absolute inset-0 bg-red-600/20 group-hover:bg-transparent transition-colors z-10"></div>
-                        <div class="w-full h-80 bg-gray-100 flex items-center justify-center group-hover:scale-110 transition-transform duration-700">
-                            <i class="fas fa-chart-line text-6xl text-gray-300 group-hover:text-red-500 transition-colors"></i>
+                    <a href="https://www.sherpabd.com/index.html" target="_blank" class="relative group rounded-2xl overflow-hidden border border-gray-100 shadow-xl cursor-pointer block h-96">
+                        <div class="absolute inset-0 bg-blue-600/10 group-hover:bg-transparent transition-colors z-20 pointer-events-none"></div>
+                        <div class="w-full h-full overflow-hidden relative bg-gray-50">
+                            <iframe 
+                                src="https://www.sherpabd.com/index.html" 
+                                class="absolute top-0 left-0 w-[200%] h-[200%] origin-top-left transform scale-50 z-10 pointer-events-none border-0"
+                                loading="lazy"
+                                title="Sherpa BD Preview"
+                                scrolling="no"
+                            ></iframe>
                         </div>
-                        <div class="absolute bottom-4 left-4 bg-white/90 backdrop-blur px-4 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity z-20 shadow-lg translate-y-2 group-hover:translate-y-0 duration-300">
-                            <span class="text-red-600 font-bold text-sm">View Project <i class="fas fa-arrow-right ml-1"></i></span>
+                        <div class="absolute bottom-4 left-4 bg-white/90 backdrop-blur px-4 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity z-30 shadow-lg translate-y-2 group-hover:translate-y-0 duration-300">
+                            <span class="text-blue-600 font-bold text-sm">Visit Site <i class="fas fa-arrow-right ml-1"></i></span>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="lg:w-2/5 reveal-left">
-                    <span class="text-red-600 font-bold tracking-widest text-sm">DIGITAL MARKETING • SAAS</span>
-                    <h3 class="text-3xl font-bold mt-2 mb-4 text-gray-900">FinTrack Pro</h3>
+                    <span class="text-blue-600 font-bold tracking-widest text-sm">DIGITAL MARKETING • DESIGN</span>
+                    <h3 class="text-3xl font-bold mt-2 mb-4 text-gray-900">Sherpa BD</h3>
                     <p class="text-gray-600 mb-6 leading-relaxed">
-                        A B2B financial tool struggling with lead generation. We revamped their content strategy and executed a LinkedIn targeted ad campaign.
+                        A comprehensive digital partner. We craft custom illustrations and banners while managing full-stack digital marketing campaigns to drive growth.
                     </p>
-                    
-                    <div class="border-l-4 border-red-500 pl-4 mb-8">
+                    <div class="border-l-4 border-blue-500 pl-4 mb-8">
                         <p class="text-gray-900 font-bold text-lg">The Impact</p>
-                        <p class="text-gray-500 text-sm mt-1">Reduced Cost Per Acquisition (CPA) by <span class="text-red-600 font-bold">45%</span>.</p>
+                        <p class="text-gray-500 text-sm mt-1">Enhanced brand visual identity and boosted social engagement by <span class="text-blue-600 font-bold">150%</span>.</p>
                     </div>
-
-                    <button class="text-gray-900 font-semibold border-b border-red-500 pb-1 hover:text-red-500 transition-colors">See Case Study</button>
+                    <a href="https://www.sherpabd.com/index.html" target="_blank" class="text-gray-900 font-semibold border-b border-blue-500 pb-1 hover:text-blue-600 transition-colors">Visit Website</a>
                 </div>
             </div>
 
-            <!-- Project 3 -->
+            <!-- Project 3: FitMate (New) -->
             <div class="flex flex-col lg:flex-row items-center gap-12">
                 <div class="lg:w-3/5 reveal-left">
-                    <div class="relative group rounded-2xl overflow-hidden border border-gray-100 shadow-xl cursor-pointer">
-                        <div class="absolute inset-0 bg-amber-500/20 group-hover:bg-transparent transition-colors z-10"></div>
-                        <div class="w-full h-80 bg-gray-100 flex items-center justify-center group-hover:scale-110 transition-transform duration-700">
-                            <i class="fas fa-utensils text-6xl text-gray-300 group-hover:text-amber-500 transition-colors"></i>
+                    <a href="https://www.fitmate.au" target="_blank" class="relative group rounded-2xl overflow-hidden border border-gray-100 shadow-xl cursor-pointer block h-96">
+                        <div class="absolute inset-0 bg-rose-600/10 group-hover:bg-transparent transition-colors z-20 pointer-events-none"></div>
+                        <div class="w-full h-full overflow-hidden relative bg-gray-50">
+                            <iframe 
+                                src="https://www.fitmate.au" 
+                                class="absolute top-0 left-0 w-[200%] h-[200%] origin-top-left transform scale-50 z-10 pointer-events-none border-0"
+                                loading="lazy"
+                                title="FitMate Preview"
+                                scrolling="no"
+                            ></iframe>
                         </div>
-                        <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur px-4 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity z-20 shadow-lg translate-y-2 group-hover:translate-y-0 duration-300">
-                            <span class="text-amber-600 font-bold text-sm">View Project <i class="fas fa-arrow-right ml-1"></i></span>
+                        <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur px-4 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity z-30 shadow-lg translate-y-2 group-hover:translate-y-0 duration-300">
+                            <span class="text-rose-600 font-bold text-sm">Visit Site <i class="fas fa-arrow-right ml-1"></i></span>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="lg:w-2/5 reveal-right">
-                    <span class="text-amber-600 font-bold tracking-widest text-sm">APP DEVELOPMENT • FOOD TECH</span>
-                    <h3 class="text-3xl font-bold mt-2 mb-4 text-gray-900">CraveHero</h3>
+                    <span class="text-rose-600 font-bold tracking-widest text-sm">WEB APP • HEALTH & FITNESS</span>
+                    <h3 class="text-3xl font-bold mt-2 mb-4 text-gray-900">FitMate</h3>
                     <p class="text-gray-600 mb-6 leading-relaxed">
-                        A local food delivery startup needing a robust driver and user app ecosystem. Developed using Flutter for native performance.
+                        A robust fitness platform connecting users with personal trainers and tailored workout plans. Built for high performance and seamless user interaction.
                     </p>
-                    
-                    <div class="border-l-4 border-amber-500 pl-4 mb-8">
+                    <div class="border-l-4 border-rose-500 pl-4 mb-8">
                         <p class="text-gray-900 font-bold text-lg">The Impact</p>
-                        <p class="text-gray-500 text-sm mt-1">Scaled to <span class="text-amber-600 font-bold">50k+ downloads</span> with zero downtime.</p>
+                        <p class="text-gray-500 text-sm mt-1">Streamlined the booking process and improved user retention through an intuitive <span class="text-rose-600 font-bold">responsive interface</span>.</p>
                     </div>
-
-                    <button class="text-gray-900 font-semibold border-b border-amber-500 pb-1 hover:text-amber-500 transition-colors">See Case Study</button>
+                    <a href="https://www.fitmate.au" target="_blank" class="text-gray-900 font-semibold border-b border-rose-500 pb-1 hover:text-rose-600 transition-colors">Visit Website</a>
                 </div>
             </div>
 
@@ -574,12 +625,14 @@
                 Let's discuss how Dhumketu Studio can accelerate your digital presence. No jargon, just results.
             </p>
 
-            <form class="max-w-md mx-auto space-y-4 text-left" onsubmit="event.preventDefault(); alert('Message sent to mission control!');">
+            <!-- Updated Form for Formspree -->
+            <!-- IMPORTANT: Replace 'YOUR_FORM_ID' with your actual Formspree Form ID -->
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="max-w-md mx-auto space-y-4 text-left">
                 <div class="group">
-                    <input type="email" placeholder="Enter your email address" class="w-full px-6 py-4 bg-white border border-gray-200 rounded-lg focus:outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-200 text-gray-900 placeholder-gray-400 transition-all shadow-sm group-hover:shadow-md">
+                    <input type="email" name="email" placeholder="Enter your email address" required class="w-full px-6 py-4 bg-white border border-gray-200 rounded-lg focus:outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-200 text-gray-900 placeholder-gray-400 transition-all shadow-sm group-hover:shadow-md">
                 </div>
                 <div class="group">
-                    <textarea rows="3" placeholder="Tell us about your project" class="w-full px-6 py-4 bg-white border border-gray-200 rounded-lg focus:outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-200 text-gray-900 placeholder-gray-400 transition-all shadow-sm group-hover:shadow-md"></textarea>
+                    <textarea name="message" rows="3" placeholder="Tell us about your project" required class="w-full px-6 py-4 bg-white border border-gray-200 rounded-lg focus:outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-200 text-gray-900 placeholder-gray-400 transition-all shadow-sm group-hover:shadow-md"></textarea>
                 </div>
                 <button type="submit" class="w-full py-4 bg-gradient-to-r from-orange-500 to-red-600 rounded-lg text-white font-bold text-lg hover:shadow-[0_0_30px_rgba(249,115,22,0.4)] transition-shadow hover:scale-[1.02] active:scale-[0.98] transform duration-200">
                     Start Mission
@@ -598,6 +651,17 @@
     <footer class="py-8 border-t border-gray-200 text-center text-gray-500 text-sm bg-white">
         <p>&copy; 2023 Dhumketu Studio. All Systems Nominal.</p>
     </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/+8801845647482" target="_blank" class="whatsapp-float group">
+        <div class="w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-lg shadow-green-500/30 group-hover:shadow-green-500/50 transition-all">
+            <i class="fab fa-whatsapp text-white text-3xl"></i>
+        </div>
+        <!-- Tooltip -->
+        <div class="absolute right-16 top-1/2 -translate-y-1/2 bg-white px-3 py-1 rounded-lg text-xs font-bold text-gray-800 shadow-md opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+            Chat with us
+        </div>
+    </a>
 
     <!-- JavaScript for Interactions -->
     <script>
